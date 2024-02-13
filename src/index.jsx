@@ -9,7 +9,7 @@ import LoginPage from './pages/LoginPage';
 import News from './pages/News';
 import Map from './pages/Map';
 import Wanted from './pages/Wanted';
-import Wiki from './pages/wiki';
+import Wiki from './pages/Wiki';
 import Messenger from './pages/Messenger';
 import Friends from './pages/Friends';
 import Groups from './pages/Groups';
