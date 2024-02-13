@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Nunito Sans-PP";
+  src: url("./fonts/NunitoSans_10pt-Regular.ttf");
+}
+
+:root {
+  --mainFont: Nunito Sans-PP, ui-sans-serif, system-ui, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --accent: #ff855f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--mainFont);
+}
+.nav:hover {
+  color: #fff;
+}
+.nav:hover .link > svg {
+  filter: invert(1);
+}
+
+.nav:hover .notification {
+  background-color: #fff;
+  color: var(--accent);
+}
+.notification {
+  color: #fff;
+}
