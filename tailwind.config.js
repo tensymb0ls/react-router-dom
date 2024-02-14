@@ -11,6 +11,7 @@ module.exports = {
       colorTextLightGray: "#8A8A8A",
       colorTextBlack: "#161616",
       accent: "#FF855F",
+      accentGreen: "#266F62",
     },
     fontSize: {
       contentSize: "14px", // defautl content font size

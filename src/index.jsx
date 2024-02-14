@@ -18,63 +18,70 @@ import PetStore from './pages/PetStore';
 import PetShelters from './pages/PetShelters';
 import Volunteers from './pages/Volunteers';
 import OtherServices from './pages/OtherServices';
+import Profile from './pages/Profile';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+    children: [
+      {
+        path: "profile",
+        element: <Profile />,
+      },
+      {
+        path: "news",
+        element: <News />,
+      },
+      {
+        path: "map",
+        element: <Map />,
+      },
+      {
+        path: "wanted",
+        element: <Wanted />,
+      },
+      {
+        path: "wiki",
+        element: <Wiki />,
+      },
+      {
+        path: "messenger",
+        element: <Messenger />,
+      },
+      {
+        path: "friends",
+        element: <Friends />,
+      },
+      {
+        path: "groups",
+        element: <Groups />,
+      },
+      {
+        path: "vethelp",
+        element: <VetHelp />,
+      },
+      {
+        path: "petstore",
+        element: <PetStore />,
+      },
+      {
+        path: "petshelters",
+        element: <PetShelters />,
+      },
+      {
+        path: "voloutneers",
+        element: <Volunteers />,
+      },
+      {
+        path: "otherservices",
+        element: <OtherServices />,
+      },
+    ]
   },
   {
     path: "/login",
     element: <LoginPage />,
-  },
-  {
-    path: "/news",
-    element: <News />,
-  },
-  {
-    path: "/map",
-    element: <Map />,
-  },
-  {
-    path: "/wanted",
-    element: <Wanted />,
-  },
-  {
-    path: "/wiki",
-    element: <Wiki />,
-  },
-  {
-    path: "/messenger",
-    element: <Messenger />,
-  },
-  {
-    path: "/friends",
-    element: <Friends />,
-  },
-  {
-    path: "/groups",
-    element: <Groups />,
-  },
-  {
-    path: "/vethelp",
-    element: <VetHelp />,
-  },
-  {
-    path: "/petstore",
-    element: <PetStore />,
-  },
-  {
-    path: "/petshelters",
-    element: <PetShelters />,
-  },
-  {
-    path: "/voloutneers",
-    element: <Volunteers />,
-  },
-  {
-    path: "/otherservices",
-    element: <OtherServices />,
   },
 
 ]);
