@@ -17,7 +17,7 @@ const App = () => {
   const outlet = useOutlet();
 
   return (
-    <div className='flex '>
+    <div className='flex bg-[#F3F3F3] min-h-[1lvh]'>
       <Aside user={user} />
       <div>{outlet || <News />}</div>
     </div>

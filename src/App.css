@@ -29,6 +29,10 @@ body {
   filter: invert(1);
 }
 
+.nav:hover > svg {
+  filter: invert(1);
+}
+
 .nav:hover .notification {
   background-color: #fff;
   color: var(--accent);
