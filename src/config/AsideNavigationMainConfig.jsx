@@ -16,6 +16,7 @@ import NewsLostFoundIcon from "../components/icons/news/NewsLostFoundIcon";
 import NewsTopNewsIcon from "../components/icons/news/NewsTopNewsIcon";
 import NewsUptadeIcon from "../components/icons/news/NewsUptadeIcon";
 
+
 export const AsideNavMain = [
     { id: 0, title: 'Profile', icon: <AsideProfileIcon />, href: 'profile', notification: '1000+' },
     { id: 1, title: 'News', icon: <AsideNewsIcon />, href: 'news', notification: '725' },
@@ -37,8 +38,9 @@ export const AsideNavServices = [
 ];
 
 export const NewsNavState = [
-    { id: 0, title: 'All News', icon: <NewsAllNewsIcon color={id === state ? 'white' : '#161616'} />, },
-    { id: 1, title: 'Lost & Found', icon: <NewsLostFoundIcon color={id === state ? 'white' : '#161616'} />, },
-    { id: 2, title: 'Top News', icon: <NewsTopNewsIcon color={id === state ? 'white' : '#161616'} />, },
-    { id: 3, title: 'Updates', icon: <NewsUptadeIcon color={id === state ? 'white' : '#161616'} />, },
+    { id: 0, title: 'All News', icon: () => < NewsAllNewsIcon />, },
+    { id: 1, title: 'Lost & Found', icon: () => <NewsLostFoundIcon />, },
+    { id: 2, title: 'Top News', icon: () => <NewsTopNewsIcon />, },
+    { id: 3, title: 'Updates', icon: () => <NewsUptadeIcon />, },
 ]
+// color = { id === state ? 'white' : '#161616'} 
