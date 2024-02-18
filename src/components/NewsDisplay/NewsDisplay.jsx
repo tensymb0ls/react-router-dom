@@ -1,9 +1,12 @@
 import React from 'react';
+import { NewsDisplayItems } from '../../config/AsideNavigationMainConfig';
 
-const NewsDisplay = () => {
+
+const NewsDisplay = ({ state }) => {
+    const theObjectInArr = NewsDisplayItems.find(item => item.id === state);
     return (
         <div className='p-[10px] bg-[#fff] rounded-[10px] shadow-componentshadow'>
-            news display
+            {theObjectInArr.content}
         </div>
     );
 };

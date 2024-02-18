@@ -1,3 +1,7 @@
+import NewsDisplayAllNews from "../components/NewsDisplayAllNews/NewsDisplayAllNews";
+import NewsDisplayLostFound from "../components/NewsDisplayLostFound/NewsDisplayLostFound";
+import NewsDisplayTopNews from "../components/NewsDisplayTopNews/NewsDisplayTopNews";
+import NewsDisplayUpdates from "../components/NewsDisplayUpdates/NewsDisplayUpdates";
 import AsideEncyclopediaIcon from "../components/icons/AsideEncyclopediaIcon";
 import AsideFriendsIcon from "../components/icons/AsideFriendsIcon";
 import AsideGroupsIcon from "../components/icons/AsideGroupsIcon";
@@ -16,6 +20,7 @@ import NewsLostFoundIcon from "../components/icons/news/NewsLostFoundIcon";
 import NewsTopNewsIcon from "../components/icons/news/NewsTopNewsIcon";
 import NewsUptadeIcon from "../components/icons/news/NewsUptadeIcon";
 
+// ! Every object in array must have uniqe id
 
 export const AsideNavMain = [
     { id: 0, title: 'Profile', icon: <AsideProfileIcon />, href: 'profile', notification: '1000+' },
@@ -37,10 +42,17 @@ export const AsideNavServices = [
 
 ];
 
+// ! id's of objects in NewsNavState and NewsDisplayItems matches (id:0 for "All News" nav batton and displayed category, etc.)
 export const NewsNavState = [
     { id: 0, title: 'All News', icon: () => < NewsAllNewsIcon />, },
     { id: 1, title: 'Lost & Found', icon: () => <NewsLostFoundIcon />, },
     { id: 2, title: 'Top News', icon: () => <NewsTopNewsIcon />, },
     { id: 3, title: 'Updates', icon: () => <NewsUptadeIcon />, },
 ]
-// color = { id === state ? 'white' : '#161616'} 
+
+export const NewsDisplayItems = [
+    { id: 0, content: <NewsDisplayAllNews />, },
+    { id: 1, content: <NewsDisplayLostFound />, },
+    { id: 2, content: <NewsDisplayTopNews />, },
+    { id: 3, content: <NewsDisplayUpdates />, },
+]

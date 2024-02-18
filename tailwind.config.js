@@ -17,6 +17,7 @@ module.exports = {
       fontSize: {
         contentSize: "14px", // defautl content font size
         subContentSize: "12px", // subcontent font size: status, aside blocks header, etc
+        headingContentSize: "18px", // subcontent font size: status, aside blocks header, etc
       },
     },
   },
